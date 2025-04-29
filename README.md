@@ -4,10 +4,9 @@
 
 ## Table of Contents
 - [Project Objective](#project-objective)
-- [Why Is It Important](#why-is-it-important)
+- [Motivation](#motivation)
 - [Dataset Description](#dataset-description)
-- [Dataset Parameters](#dataset-parameters)
-- [Model Solution](#model-solution)
+- [Proposed solution](#proposed-solution)
 - [Limitations](#limitations)
 - [Future Work](#future-work)
 
