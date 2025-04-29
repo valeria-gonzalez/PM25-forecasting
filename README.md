@@ -14,21 +14,19 @@
 
 The objective of this project is to predict daily PM2.5 pollutant concentration levels in Tlaquepaque, Jalisco using a Long Short-Term Memory (LSTM) neural network model. By leveraging historical atmospheric data, the goal is to create a reliable tool capable of forecasting air quality trends and helping to anticipate periods of poor air quality.
 
-### What you'll find
-
-In order to make this project a little more comprehensible, it's presented in the form of three jupyter notebooks that detail the steps taken to create this project, which are:
+## Project Files Structure
+Access the files in this repository in the following order:
 
 - **Data Preprocessing:** Cleaning and combining multiple years of atmospheric data into a final training dataset.
+`1_data_preprocessing.ipynb``
 
-- **Feature Engineering:** Selecting relevant meteorological features to predict PM2.5 concentrations and interpolating missing data.
+- **Feature Engineering:** Selecting relevant features to predict PM2.5 concentrations and interpolating missing data.
+`2_feature_engineering.ipynb`
 
-- **Reframe Dataset:** Transforming the cleaned time series data into a supervised learning format, where input sequences of past time steps are used to predict future values of PM2.5.
+- **Reframe Dataset and LTSM**: Transforming data into a supervised learning format, train LTSM model and forecast PM2.5.
+`3_reframe_dataset.ipynb`
 
-- **Select and Train LSTM:** Designing and training a Long Short-Term Memory (LSTM) neural network capable of learning patterns from the multivariate dataset to forecast PM2.5. Optimal hyperparameter search methods were applied to improve the model's performance
-
-- **Forecasting and Results Analysis:** Using the trained LSTM model to forecast PM2.5 levels, analyzing the model's performance, and visualizing the predictions.
-
-Graphs of the process and the datasets created can also be found.
+Graphs and datasets created in each phase can also be found in the `graphs`
 
 ## Motivation
 
