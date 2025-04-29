@@ -29,10 +29,7 @@ In order to make this project a little more comprehensible, it's presented in th
 
 - **Forecasting and Results Analysis:** Using the trained LSTM model to forecast PM2.5 levels, analyzing the model's performance, and visualizing the predictions.
 
-Graphs of the process and the datasets created can also be found, providing a visual understanding of the transformations and predictions made throughout the project.
-
 Graphs of the process and the datasets created can also be found.
-
 
 ## Why Is It Important
 
