@@ -90,6 +90,12 @@ The following features were selected based on their consistency across the datas
 - **Target Pollutant (Feature to Predict):**
   - Fine Particulate Matter (PM2.5)
 
+### Results
+
+Over many trials, the LTSM overall had an average mean squared error of 11, as well as having some difficulties during training to generalize between training and validation data. The following graph illustrates the accuracy of the model to forecast PM2.5 one step:
+
+![alt text](graphs/ltsm/predictions.png)
+
 ## Limitations
 
 One of the primary limitations was the inconsistent and incomplete nature of the original data, which required substantial cleaning and interpolation. Additionally, while LSTM is effective for sequence modeling, it has limited capacity to handle certain types of noise and non-linearity that may exist in real-world air quality data. Exploring more advanced architectures could potentially yield better performance.
