@@ -31,7 +31,7 @@ In order to make this project a little more comprehensible, it's presented in th
 
 Graphs of the process and the datasets created can also be found.
 
-## Why Is It Important
+## Motivation
 
 Air pollution is a significant public health concern in the Área Metropolitana de Guadalajara (AMG), with PM10 and ozone (O3) often exceeding safe limits. Exposure to particulate matter, especially during the winter, is associated with severe health risks such as lung cancer, pneumonia, and exacerbation of asthma. Predicting pollutant levels allows for timely preventive measures to protect public health.
 
@@ -44,7 +44,7 @@ The data used for this project was sourced from the [Secretaría de Medio Ambien
 
 However, the datasets required heavy preprocessing due to inconsistencies, missing data, and varying formats. After extensive cleaning, interpolation, and reframing, three years of data were combined into a final training dataset suitable for time series forecasting.
 
-## Dataset Parameters
+### Dataset Parameters
 
 The following parameters were present in the raw datasets:
 
@@ -71,7 +71,7 @@ The following parameters were present in the raw datasets:
 | Radiación Solar (RS)            | Solar radiation                                                      | W/m²           |
 | Índice UV (UVI)                 | Ultraviolet radiation index                                          | Index          |
 
-## Model Solution
+## Proposed solution
 
 To forecast PM2.5 concentrations, a **multivariate LSTM model** was developed.
 
