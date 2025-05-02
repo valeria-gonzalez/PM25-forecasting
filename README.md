@@ -92,9 +92,41 @@ The following features were selected based on their consistency across the datas
 
 ### Results
 
-Over many trials, the LTSM overall had an average mean squared error of 11, as well as having some difficulties during training to generalize between training and validation data. The following graph illustrates the accuracy of the model to forecast PM2.5 one step:
+#### 1 step forecasting 
 
-![alt text](graphs/ltsm/predictions.png)
+Over many trials, for predicting one step ahead with the data of the day before, the LTSM overall had an average mean squared error of 10.98, as well as having some difficulties during training to generalize between training and validation data. 
+
+The model has one input layer with 50 nodes and one output layer with 1 output node, it was trained with 100 epochs and a batch size of 72.
+
+The following graph illustrates the accuracy of the model to forecast PM2.5 one step:
+
+![Step 1 graph](graphs/ltsm/predictions.png)
+
+#### 7 step forecasting 
+
+For predicting 7 steps ahead, the information for 23 days before was used. The model had an root squared mean error of:
+
+- Step 1: 10.416
+- Step 2: 11.280
+- Step 3: 11.766
+- Step 4: 12.427
+- Step 5: 12.633
+- Step 6: 12.643
+- Step 7: 14.678
+
+The model has one input layer with 50 nodes and one output layer with seven nodes, it was trained with 100 epochs and a batch size of 10.
+
+The following graphs illustrate the accuracy of the model for each step:
+
+![Step 1 graph](graphs/ltsm/t_plus_1_pred.png)
+![Step 2 graph](graphs/ltsm/t_plus_2_pred.png)
+![Step 3 graph](graphs/ltsm/t_plus_3_pred.png)
+![Step 4 graph](graphs/ltsm/t_plus_4_pred.png)
+![Step 5 graph](graphs/ltsm/t_plus_5_pred.png)
+![Step 6 graph](graphs/ltsm/t_plus_6_pred.png)
+![Step 7 graph](graphs/ltsm/t_plus_7_pred.png)
+
+
 
 ## Limitations
 
