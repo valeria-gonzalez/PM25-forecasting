@@ -94,13 +94,13 @@ The following features were selected based on their consistency across the datas
 
 #### 1 step forecasting 
 
-Over many trials, for predicting one step ahead with the data of the day before, the LTSM overall had an average mean squared error of 10.98, as well as having some difficulties during training to generalize between training and validation data. 
+Over many trials, for predicting one step ahead with the data of the day before, the LTSM overall had an average mean squared error of 9.559, as well as having some difficulties during training to generalize between training and validation data. 
 
 The model has one input layer with 50 nodes and one output layer with 1 output node, it was trained with 100 epochs and a batch size of 72.
 
 The following graph illustrates the accuracy of the model to forecast PM2.5 one step:
 
-![Step 1 graph](graphs/ltsm/predictions.png)
+![Step 1 graph](graphs/ltsm/one_step_pred.png)
 
 #### 7 step forecasting 
 
